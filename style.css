@@ -1,0 +1,926 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Gradient Background for Main Section */
+#main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+/* Left Section */
+#left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 60% 20%;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#topleft {
+    padding-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#topleft img {
+    width: 150px;
+}
+
+#topright {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    align-self: center;
+
+}
+
+#topright h5 {
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    color: #ffffff;
+}
+
+#topright h5:hover {
+    color: #f34704  ; /* Muted coral color */
+}
+
+#centre {
+    grid-column: 1 / 3;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#centre h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    color: #f1faee; /* Light color for better contrast */
+}
+
+#centre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #f1faee;
+}
+
+.btn {
+    background: #f34704; /* Muted coral color */
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: #2a2d34; /* Darker shade for hover */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+}
+
+#bottom {
+    grid-column: 1 / 4;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #f1faee; /* Light color for better contrast */
+}
+
+#right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#arrow {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f34704; /* Muted coral color */
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+}
+
+#arrow i {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* Small Laptops and Large Tablets */
+@media (max-width: 1024px) {
+    #main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    
+    /* Left Section */
+    #left {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 60% 20%;
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    #topleft {
+        padding-left: 10%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 3;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    #centre h1 {
+        font-size: 3rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-column: 1 / 4;
+        grid-row: 3/4;
+        text-align: center;
+        padding: 10px 20px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {
+        position: absolute;
+        top: 40%;
+        left: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f34704; /* Muted coral color */
+        padding: 20px;
+        color: #ffffff;
+        border-radius: 50%;
+        transform: translate(-50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    @media (max-height:932px){
+
+    
+        #left {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+            padding: 5px;
+            grid-column: 1/3;
+        }    
+        #right{
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        
+    #topleft {
+        padding-left: 10%;
+        padding-top: 30%;
+        grid-column: 1;
+        justify-self: center;
+        
+    
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        padding-top: 2%;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 4;
+        justify-content: left;
+        padding-top: 200px;
+        
+    }
+    
+    #centre h1 {
+        font-size: 2.9rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-row: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        padding-top: 40%;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {rotate: 90deg;
+        top: 84%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    }
+    
+    @media (max-height:915px){
+    
+        
+        #left {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+            padding: 5px;
+            grid-column: 1/3;
+        }    
+        #right{
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        
+    #topleft {
+        padding-left: 10%;
+        padding-top: 30%;
+        grid-column: 1;
+        justify-self: center;
+        
+    
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        padding-top: 2%;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 4;
+        justify-content: left;
+        padding-top: 200px;
+        
+    }
+    
+    #centre h1 {
+        font-size: 2.9rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-row: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        padding-top: 40%;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {rotate: 90deg;
+        top: 85%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    }
+    
+    
+    @media (max-height:896px){
+    
+        
+        #left {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+            padding: 5px;
+            grid-column: 1/3;
+        }    
+        #right{
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        
+    #topleft {
+        padding-left: 10%;
+        padding-top: 30%;
+        grid-column: 1;
+        justify-self: center;
+        
+    
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        padding-top: 2%;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 4;
+        justify-content: left;
+        padding-top: 200px;
+        
+    }
+    
+    #centre h1 {
+        font-size: 2.9rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-row: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        padding-top: 40%;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {rotate: 90deg;
+        top: 87%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    }
+    
+    @media (max-height:844px){
+    
+        
+        #left {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+            padding: 5px;
+            grid-column: 1/3;
+        }    
+        #right{
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        
+    #topleft {
+        padding-left: 10%;
+        padding-top: 30%;
+        grid-column: 1;
+        justify-self: center;
+        
+    
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        padding-top: 2%;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 4;
+        justify-content: left;
+        padding-top: 200px;
+        
+    }
+    
+    #centre h1 {
+        font-size: 2.9rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-row: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        padding-top: 40%;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {rotate: 90deg;
+        top: 90%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    }
+    
+    @media(max-height:740px){
+    
+        
+        #left {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+            padding: 5px;
+            grid-column: 1/3;
+        }    
+        #right{
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        
+    #topleft {
+        padding-left: 10%;
+        padding-top: 30%;
+        grid-column: 1;
+        justify-self: center;
+        
+    
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        padding-top: 2%;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 4;
+        justify-content: left;
+        padding-top: 200px;
+        
+    }
+    
+    #centre h1 {
+        font-size: 2.9rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-row: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        padding-top: 40%;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {rotate: 90deg;
+        top: 102%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    }
+    
+    @media (max-height:667px){
+    
+        #left {
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 60px 30% 10%;
+            padding: 5px;
+            grid-column: 1/3;
+        }    
+        #right{
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+        
+    #topleft {
+        padding-left: 10%;
+        padding-top: 30%;
+        grid-column: 1;
+        justify-self: center;
+        
+    
+    }
+    
+    #topleft img {
+        width: 150px;
+    }
+    
+    #topright {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        align-self: center;
+        justify-self: center;
+        grid-column: 1/4;
+        padding-top: 2%;
+    
+    }
+    
+    #topright h5 {
+        margin: 0 10px;
+        transition: color 0.3s ease;
+        color: #ffffff;
+    }
+    
+    #topright h5:hover {
+        color: #f34704  ; /* Muted coral color */
+    }
+    
+    #centre {
+        grid-column: 1 / 4;
+        justify-content: left;
+        padding-top: 200px;
+        
+    }
+    
+    #centre h1 {
+        font-size: 2.9rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #centre h2 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #f1faee;
+    }
+    
+    .btn {
+        background: #f34704; /* Muted coral color */
+        color: #ffffff;
+        padding: 0.8rem 1.2rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #2a2d34; /* Darker shade for hover */
+        transform: scale(1.05); /* Slightly increase button size on hover */
+    }
+    
+    #bottom {
+        grid-row: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.2rem;
+        padding-top: 40%;
+        color: #f1faee; /* Light color for better contrast */
+    }
+    
+    #right video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #arrow {rotate: 90deg;
+        top: 115%;
+        left: 50%;
+        transform: translate(50%, 50%);
+    }
+    
+    #arrow i {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    }
+            
+    }
