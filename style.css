@@ -580,7 +580,7 @@ a {
     }
     
     #arrow {rotate: 90deg;
-        top: 90%;
+        top: 100%;
         left: 50%;
         transform: translate(50%, 50%);
     }
