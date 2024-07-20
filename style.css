@@ -246,9 +246,9 @@ a {
         padding: 20px;
         position: relative;
         overflow: hidden;
-        animation: changeBackground 30s infinite;
+        animation: changeBackground 10s infinite;
         background-image: url('bg1.jpg');
-        transition: background-image 1s ease-in-out;
+        transition: background-image 30s ease-in-out;
     }
     #atopleft {
         padding-left: 10%;
@@ -290,23 +290,23 @@ a {
         font-family: 'Playfair Display', serif;
         text-align: center;
         opacity: 0;
-        transition: opacity 1s ease-in-out;
+        transition: opacity 10s ease-in-out;
         z-index: 1;
     }
         
     #atleft .content:nth-of-type(2) {
         animation: fadeContent2 30s infinite;
-        animation-delay: 6s;
+        animation-delay: 10s;
     }
     
     #atleft .content:nth-of-type(3) {
-        animation: fadeContent3 10s infinite;
-        animation-delay: 16s;
+        animation: fadeContent3 30s infinite;
+        animation-delay: 20s;
     }
     
     #atleft .content:nth-of-type(4) {
-        animation: fadeContent4 15s infinite;
-        animation-delay: 20s;
+        animation: fadeContent4 9.5 s infinite;
+        animation-delay: 35s;
     }
     
 
