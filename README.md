@@ -1,8 +1,12 @@
 # Kerala-tour
+
+https://github.com/user-attachments/assets/7215c166-61d6-49af-999c-2c9c3e0d13b3
+
+
+
 ![Kerala-Attraction - Brave 7_20_2024 7_44_27 PM](https://github.com/user-attachments/assets/7ea49906-218e-48aa-9099-23e5c460bc19)
 ![Kerala-Tour🌴 - Brave 7_20_2024 7_38_46 PM](https://github.com/user-attachments/assets/db321850-2a19-42ec-8e17-5e3c0eaeabb2)
 ![Kerala-Tour🌴 - Brave 7_20_2024 7_57_53 PM](https://github.com/user-attachments/assets/4bda2bff-bb47-47af-8420-d858bd1d9b6b)
-
 
 
 I'm thrilled to share my latest project: a beautifully designed Kerala Tourism Blog.
@@ -29,7 +33,7 @@ I'm thrilled to share my latest project: a beautifully designed Kerala Tourism B
 
 **Attractions Page:** Featuring the must-visit spots with engaging descriptions and stunning visuals.
 
-HTML5 &  CSS3  For structuring and styling the web pages.
+**HTML5 & CSS3**: Core structure and styling.
 
 
 Creating this project was a journey of blending creativity with technical skills, aiming to provide an informative and visually appealing guide to one of the most beautiful places on Earth.
