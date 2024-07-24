@@ -7,7 +7,7 @@
 
 I'm thrilled to share my latest project: a beautifully designed Kerala Tourism Blog.
 
-🌐 Visit the Live Project: https://lnkd.in/gEk4EN6N
+🌐 Visit the Live Project: (https://shettyv985keralatour.netlify.app/)
 
 
 
